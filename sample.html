@@ -39,8 +39,8 @@
             const maxWidth = document.documentElement.clientWidth - 20;
             const r = document.createElement('div');
             r.className = 'random';
-            r.style.top = Math.floor(Math.random() * maxHeight);
-            r.style.left = Math.floor(Math.random() * maxWidth);
+            r.style.top = Math.floor(Math.random() * maxHeight) + 'px';
+            r.style.left = Math.floor(Math.random() * maxWidth) + 'px';
             document.body.appendChild(r);
         })();
         </script>
