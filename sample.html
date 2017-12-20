@@ -37,6 +37,7 @@
             // create element in random place
             const maxHeight = document.documentElement.scrollTop - 20;
             const maxWidth = document.documentElement.clientWidth - 20;
+            console.log(maxWidth, maxHeight);
             const r = document.createElement('div');
             r.className = 'random';
             r.style.top = Math.floor(Math.random() * (maxHeight - 0)) + 0 + 'px';
