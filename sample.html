@@ -35,12 +35,12 @@
         <script>
         (function(){
             // create element in random place
-            const maxHeight = document.documentElement.scrollTop - 40;
-            const maxWidth = document.documentElement.clientWidth - 40;
+            const maxHeight = document.documentElement.scrollTop - 20;
+            const maxWidth = document.documentElement.clientWidth - 20;
             const r = document.createElement('div');
             r.className = 'random';
-            r.style.top = Math.floor(Math.random() * maxHeight) + 20 + 'px';
-            r.style.left = Math.floor(Math.random() * maxWidth) + 20 +'px';
+            r.style.top = Math.floor(Math.random() * (maxHeight - 0)) + 0;
+            r.style.left = Math.floor(Math.random() * (maxWidth - 0)) + 0;
             document.body.appendChild(r);
         })();
         </script>
