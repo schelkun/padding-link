@@ -38,10 +38,13 @@
             const maxHeight = document.documentElement.scrollHeight - 20;
             const maxWidth = document.documentElement.clientWidth - 20;
             const r = document.createElement('div');
+            const pos = [Math.floor(Math.random() * maxWidth) + 'px', Math.floor(Math.random() * maxHeight) + 'px'];
             r.className = 'random';
-            r.style.top = Math.floor(Math.random() * maxHeight) + 'px';
-            r.style.left = Math.floor(Math.random() * maxWidth) + 'px';
+            r.style.top = pos[1];
+            r.style.left = pos[0];
             document.body.appendChild(r);
+            
+            window.pos = pos;
         })();
         </script>
     </body>
