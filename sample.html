@@ -37,12 +37,16 @@
             // create element in random place
             const maxHeight = document.documentElement.scrollHeight - 20;
             const maxWidth = document.documentElement.clientWidth - 20;
-            const r = document.createElement('div');
+            var r = document.createElement('div');
             const pos = [Math.floor(Math.random() * maxWidth), Math.floor(Math.random() * maxHeight)];
             r.className = 'random';
             r.style.top = `${pos[1]}px`;
             r.style.left = `${pos[0]}px`;
-            document.body.appendChild(r);
+            r = document.body.appendChild(r);
+            
+            r.addEventListener('click', function(e) {
+                window.location.replace('/');
+            });
             
             window.pos = pos;
         })();
